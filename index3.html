@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="forml" rumat="server" width="800" height="600">
+        <p>Với internet explorer 4,0 trở lên, bạn có thể nhập trực tiếp nội dung vào đây</p>
+        <table width="100%">
+            <tr>
+                <th width="30%"> Họ tên</th>
+                <td width="70%"> <input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <th width="30%"> Email : </th>
+                <td width="70%"><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <th width="30%">Gửi tới</th>
+                <td width="70%">
+                    <select id="sendto" name="sendto" size="2" multiple="multiple">
+                        <option value="ban1">Ban biên tập</option>
+                        <option value="ban2">Ban chăm sóc khách hàng</option>
+                        <option value="ban3">Ban ....</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="30%">Tiêu đề</th>
+                <td width="70%">
+                    <input type="text" id="name" name="name" maxlength="300">
+                </td>
+            </tr>
+            <tr style="background-color: gray;">
+                <th width="30%">Nội dung</th>
+                <td width="70%">
+                    Gõ tiếng việt &nbsp;&nbsp;
+                    <input type="radio" id="rOff" name="rOff" /> Off &nbsp;
+                    <input type="radio" id="rTelex" name="rTelex" checked="check">Telex &nbsp;
+                    <input type="radio" id="rVNI" name="rVNI" /> VNI&nbsp;
+                    <input type="radio" id="rVIQR" name="rVIQR"> VIQR&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="content" name="content" rows="10" style="width: 100%;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" id="submit" name="Gửi tòa soạn" /> &nbsp;&nbsp;
+                    <input type="reset" id="reset" name="Xóa trắng" />
+                </th>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: block;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    button {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <form id="registerform">
+        <table style="border: 1px solid black;" height="600" width="400">
+            <tr>
+                <th height="100">
+                    <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+                </th>
+            </tr>
+            <tr>
+                <td height="30%">
+                    <fieldset>
+                        <legend style="font-size: 18px;">Thông tin cá nhân</legend>
+                        <table>
+                            <tr>
+                                <td><label for="name">Họ và tên :</label></td>
+                                <td> <input type="text" id="name"><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="date">Ngày sinh :</label></td>
+                                <td><input type="date" id="date"><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender">Giới tính :</label></td>
+                                <td><select id="gender" name="select" size="1">
+                                        <option value="gender1">Nam</option>
+                                        <option value="gender2">Nữ</option>
+                                        <option value="gender3">Khác...</option>
+                                    </select><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Địa chỉ :</label></td>
+                                <td><input type="text" id="address"><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="callnumer">SĐT :</label></td>
+                                <td><input type="text" id="callnumer"><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email :</label>
+                                </td>
+                                <td> <input type="email" id="email"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend style="font-size: 18px;">Thông tin thu nhập</legend>
+                        <label for="job">Nghề nghiệp :</label>
+                        <select id="job" size="1" name="select">
+                            <option value="job1"> Lập trình viên</option>
+                            <option value="job2"> Bác sĩ</option>
+                            <option value="job3"> Công An</option>
+                            <option value="job4"> Kĩ sư</option>
+                            <option value="job5"> Y tá</option>
+                            <option value="job6">Nhà thầu</option>
+                            <option value="job7"> Buôn bán</option>
+                            <option value="job8"> Khác ...</option>
+                        </select><br>
+                        <label for="income">Thu nhập :</label><br>
+                        <input type="radio" id="income" name="tien">Dưới 10 triệu<br>
+                        <input type="radio" id="income" name="tien">Từ 10 triệu đến 20 triệu<br>
+                        <input type="radio" id="income" name="tien">Trên 20 triệu<br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <button>Đăng ký</button>
+                    <button>Hủy Đăng ký</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>
